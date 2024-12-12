@@ -8,12 +8,14 @@ let heartenemy = 3;
 
 function startGame() {  /*DOM*/
 
-    let selectAttack = document.getElementById('"select_Dragon"')
-    selectAttack.style.display
+    let startover = document.getElementById('Restart')
+    startover.style.display = 'none'
+
+    let sectionAttack = document.getElementById('selct_Attack')
+    sectionAttack.style.display = 'none' /* desahabilitar selecion de ataques */ 
 
     let buttonDragonPet = document.getElementById('button_selection')
     buttonDragonPet.addEventListener('click', selectDragonPet)
-
 
     let buttonFire = document.getElementById('button_Fire')
     buttonFire.addEventListener('click', attackFire)
@@ -24,13 +26,18 @@ function startGame() {  /*DOM*/
     let buttonSoil = document.getElementById('button_Soil')
     buttonSoil.addEventListener('click', attackSoil)
 
-
     let buttonRestart = document.getElementById('button_Restart')
-    buttonRestart.addEventListener('click', restartGame)
+    buttonRestart.addEventListener('click', restartGame) /* reiniciar*/
 
 }
 
 function selectDragonPet() {
+
+    let sectionDragon = document.getElementById('select_Dragon')
+    sectionDragon.style.display = 'none' /* desaparece la seleccion de dragons caundo se selecciona un dragon */
+
+    let sectionAttack = document.getElementById('selct_Attack')
+    sectionAttack.style.display = 'block' /* aparece nuevamente cuando seleciona un animal  */
 
     let monkey = document.getElementById('dragon-Fire')
     let sharking = document.getElementById('dragon-Water')
@@ -168,18 +175,22 @@ function messagessfinal(resultfinal) {
 
     sectionMessage.appendChild(paragraph)
 
-    /*==================DESABLE BUTTONS=========================*/
+    /*==================DISABLEd BUTTONS=========================*/
 
     let buttonFire = document.getElementById('button_Fire')
-    buttonFire.desable = true
+    buttonFire.disabled = true
 
     let buttonWater = document.getElementById('button_Water')
-    buttonWater.adesable = true
+    buttonWater.disabled = true
 
     let buttonSoil = document.getElementById('button_Soil')
-    buttonSoil.desable = true
+    buttonSoil.disabled = true
+
+    let startover = document.getElementById('Restart')
+    startover.style.display = 'block'
 
 }
+
 
 
 function restartGame() {
