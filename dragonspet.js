@@ -37,7 +37,7 @@ function selectDragonPet() {
     sectionDragon.style.display = 'none' /* desaparece la seleccion de dragons caundo se selecciona un dragon */
 
     let sectionAttack = document.getElementById('selct_Attack')
-    sectionAttack.style.display = 'block' /* aparece nuevamente cuando seleciona un animal  */
+    sectionAttack.style.display = 'flex' /* aparece nuevamente cuando seleciona un animal  */
 
     let monkey = document.getElementById('dragon-Fire')
     let sharking = document.getElementById('dragon-Water')

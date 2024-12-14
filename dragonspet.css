@@ -1,1 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
+body {
+
+    margin: 0;
+}
+
+
+
+#select_Dragon {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_Tittle {
+
+    font-family: "Henny Penny", system-ui;
+    font-size: 6rem;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.tittle_Chosse {
+    
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container_Dragon {
+
+    display: flex;
+    gap: 10px
+}
+
+.cards-box {
+    width: auto;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px chartreuse;
+    margin: 10px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.cards-box:hover{
+    background-color: chocolate;
+    transition: 3s;
+    }
+
+img{
+
+    width: 50px;
+    
+}
+
+
+input {
+    display: none;
+}
+
+#button_selection {
+    margin-top: 30px;
+    font-family:"Henny Penny", system-ui;
+    font: size 2rem;
+    border-radius: 10%;
+}
+
+#selct_Attack{
+    /* el display flex es no  necesario poner cuando esta declarado desde JS*/
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button_Power{
+
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    border-color: transparent;
+    width: 100px;
+
+}
