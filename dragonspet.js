@@ -12,7 +12,7 @@ function startGame() {  /*DOM*/
     startover.style.display = 'none'
 
     let sectionAttack = document.getElementById('selct_Attack')
-    sectionAttack.style.display = 'none' /* desahabilitar selecion de ataques */ 
+    sectionAttack.style.display = 'none' /* desahabilitar selecion de ataques */
 
     let buttonDragonPet = document.getElementById('button_selection')
     buttonDragonPet.addEventListener('click', selectDragonPet)
@@ -162,20 +162,19 @@ function createMessages(resultados) {
     let ataquenemy = document.getElementById('ataqu-enemy')
 
     // it is creating and adding the news paraghaph //
-    let notificacion = document.createElement('p')
+    /* let notificacion = document.createElement('p') se elimina ya que se declara el resultado de empate como un texto ya que nos interesa visualizar el texto en pantalla */
     let newAttackplayer = document.createElement('p')
     let newAttackenemy = document.createElement('p')
 
     // doing a bond between paragaph and html 'always needs to be bind'// 
-    notificacion.innerHTML = resultados
-    newAttackplayer.innerHTML =  attacksPlayer 
+    sectionMessage.innerHTML = resultados
+    newAttackplayer.innerHTML = attacksPlayer
     newAttackenemy.innerHTML = attacksEnemy
-    
- //se verifica que los hijos esten vinculados con los elementos gad the html //
-    sectionMessage.appendChild(notificacion)
+
+    //se verifica que los hijos esten vinculados con los elementos gad the html //
+    /* sectionMessage.appendChild(notificacion) se elimina tambien ya que se declara desde desde el bind .inner*/
     ataqueplayer.appendChild(newAttackplayer)
     ataquenemy.appendChild(newAttackenemy)
-
 
 }
 
