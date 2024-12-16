@@ -104,10 +104,12 @@ input {
     margin-top: 20px;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 #button_Restart{
-    border-color: transparent;
+    border-color: none;
+   
 }
