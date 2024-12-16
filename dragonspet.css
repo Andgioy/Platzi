@@ -95,3 +95,11 @@ input {
     width: 100px;
 
 }
+
+#Messages{
+    width: 280px;
+    background-color: blueviolet;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
