@@ -97,6 +97,7 @@ input {
 }
 
 #Messages{
+
     width: 280px;
     background-color: blueviolet;
     padding: 20px;
@@ -104,4 +105,9 @@ input {
     border-radius: 20px;
     display: flex;
     justify-content: center;
+
+}
+
+#button_Restart{
+    border-color: transparent;
 }

@@ -182,10 +182,10 @@ function messagessfinal(resultfinal) {
 
     let sectionMessage = document.getElementById('resultado')
 
-    let paragraph = document.createElement('p')
-    paragraph.innerHTML = resultfinal
+    /* let paragraph = document.createElement('p') este elemento se elimina */
+    sectionMessage.innerHTML = resultfinal
 
-    sectionMessage.appendChild(paragraph)
+    /*sectionMessage.appendChild(paragraph) se elimina para que el mensaje final apracesca al finalizar el jeugo*/
 
     /*==================DISABLED BUTTONS=========================*/
 
