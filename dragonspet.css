@@ -113,3 +113,7 @@ input {
     border-color: none;
    
 }
+.resulT{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
