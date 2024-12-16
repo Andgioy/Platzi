@@ -180,14 +180,14 @@ function createMessages(resultados) {
 
 function messagessfinal(resultfinal) {
 
-    let sectionMessage = document.getElementById('Messages')
+    let sectionMessage = document.getElementById('resultado')
 
     let paragraph = document.createElement('p')
     paragraph.innerHTML = resultfinal
 
     sectionMessage.appendChild(paragraph)
 
-    /*==================DISABLEd BUTTONS=========================*/
+    /*==================DISABLED BUTTONS=========================*/
 
     let buttonFire = document.getElementById('button_Fire')
     buttonFire.disabled = true
