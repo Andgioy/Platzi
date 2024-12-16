@@ -41,6 +41,7 @@ body {
 }
 
 .cards-box {
+    background-color: blue;
     width: auto;
     height: 100px;
     padding: 10px;
@@ -51,12 +52,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   
 }
-.cards-box:hover{
+/*.cards-box:hover{
     background-color: chocolate;
     transition: 3s;
-    }
+    }*/
 
 img{
 
@@ -64,8 +66,8 @@ img{
     
 }
 
-
 input {
+    
     display: none;
 }
 
@@ -83,12 +85,12 @@ input {
 
 }
 
-.button_Power{
+.button-powers{
 
-    background-color: blanchedalmond;
+    background-color: rgb(153, 49, 238);
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 20%;
+    border-radius: 25%;
     border-color: transparent;
     width: 100px;
 

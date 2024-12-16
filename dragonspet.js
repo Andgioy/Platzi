@@ -156,12 +156,25 @@ function viewheart() {
 
 function createMessages(resultados) {
 
-    let sectionMessage = document.getElementById('Messages')
+    //nuestras variables //
+    let sectionMessage = document.getElementById('resultado') //nuestras variables //
+    let ataqueplayer = document.getElementById('ataque-player')
+    let ataquenemy = document.getElementById('ataqu-enemy')
 
-    let paragraph = document.createElement('p')
-    paragraph.innerHTML = 'The Dragon attacked with ' + attacksPlayer + ', Dragon Enemy attacked with ' + attacksEnemy + '  ' + resultados;
+    // it is creating and adding the news paraghaph //
+    let notificacion = document.createElement('p')
+    let newAttackplayer = document.createElement('p')
+    let newAttackenemy = document.createElement('p')
 
-    sectionMessage.appendChild(paragraph)
+    // doing a bond between paragaph and html 'always needs to be bind'// 
+    notificacion.innerHTML = resultados
+    newAttackplayer.innerHTML =  attacksPlayer 
+    newAttackenemy.innerHTML = attacksEnemy
+    
+ //se verifica que los hijos esten vinculados con los elementos gad the html //
+    sectionMessage.appendChild(notificacion)
+    ataqueplayer.appendChild(newAttackplayer)
+    ataquenemy.appendChild(newAttackenemy)
 
 
 }
