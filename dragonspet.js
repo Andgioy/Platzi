@@ -2,37 +2,44 @@
 // REDUCING CODE //
 
 //function startGame//
-let startover = document.getElementById('Restart')
-let sectionAttack = document.getElementById('selct_Attack')
-let buttonDragonPet = document.getElementById('button_selection')
-let buttonFire = document.getElementById('button_Fire')
-let buttonWater = document.getElementById('button_Water')
-let buttonSoil = document.getElementById('button_Soil')
-let buttonRestart = document.getElementById('button_Restart')
+const startover = document.getElementById('Restart')
+const sectionAttack = document.getElementById('selct_Attack')
+const buttonDragonPet = document.getElementById('button_selection')
+const buttonFire = document.getElementById('button_Fire')
+const buttonWater = document.getElementById('button_Water')
+const buttonSoil = document.getElementById('button_Soil')
+const buttonRestart = document.getElementById('button_Restart')
 
 //function selectDragonPet//
 
-let sectionDragon = document.getElementById('select_Dragon')
+const sectionDragon = document.getElementById('select_Dragon')
 /*let sectionAttack = document.getElementById('selct_Attack')*/ // has been eleminated this line of code becouse it was declared in other funtion (it was declared for second time it isn't necessary)
-let monkey = document.getElementById('dragon-Fire')
-let sharking = document.getElementById('dragon-Water')
-let changuita = document.getElementById('dragon-Soil')
-let spanDragonPlayer = document.getElementById('dragon_Player')
+const monkey = document.getElementById('dragon-Fire')
+const sharking = document.getElementById('dragon-Water')
+const changuita = document.getElementById('dragon-Soil')
+const spanDragonPlayer = document.getElementById('dragon_Player')
 
 //function enemyDragonPet//
 
-let spanDragonEnemy = document.getElementById('dragon_Enemy')
+const spanDragonEnemy = document.getElementById('dragon_Enemy')
 
 //function battlesWild//
 
-let spanheartplayer = document.getElementById('heart-player')
-let spanheartenemy = document.getElementById('heart-enemy')
+const spanheartplayer = document.getElementById('heart-player')
+const spanheartenemy = document.getElementById('heart-enemy')
 
 //function createMessages//
 
-let sectionMessage = document.getElementById('resultado') //nuestras variables //
-let ataqueplayer = document.getElementById('ataque-player')
-let ataquenemy = document.getElementById('ataqu-enemy')
+const sectionMessage = document.getElementById('resultado') //nuestras variables //
+const ataqueplayer = document.getElementById('ataque-player')
+const ataquenemy = document.getElementById('ataqu-enemy')
+
+//function messagessfinal//
+/*let sectionMessage = document.getElementById('resultado')
+let buttonFire = document.getElementById('button_Fire')
+let buttonWater = document.getElementById('button_Water')
+let buttonSoil = document.getElementById('button_Soil')
+let startover = document.getElementById('Restart')*/ // these variable are decalred in the beging in the funtions start game
 
 /* variable global*/
 let attacksPlayer
@@ -200,7 +207,6 @@ function createMessages(resultados) {
 
 function messagessfinal(resultfinal) {
 
-    let sectionMessage = document.getElementById('resultado')
 
     /* let paragraph = document.createElement('p') este elemento se elimina */
     sectionMessage.innerHTML = resultfinal
@@ -209,16 +215,12 @@ function messagessfinal(resultfinal) {
 
     /*==================DISABLED BUTTONS=========================*/
 
-    let buttonFire = document.getElementById('button_Fire')
     buttonFire.disabled = true
 
-    let buttonWater = document.getElementById('button_Water')
     buttonWater.disabled = true
 
-    let buttonSoil = document.getElementById('button_Soil')
     buttonSoil.disabled = true
 
-    let startover = document.getElementById('Restart')
     startover.style.display = 'block'
 
 }
