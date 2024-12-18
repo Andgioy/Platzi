@@ -1,73 +1,48 @@
-
-// REDUCING CODE //
-
-//function startGame//
-let startover = document.getElementById('Restart')
-let sectionAttack = document.getElementById('selct_Attack')
-let buttonDragonPet = document.getElementById('button_selection')
-let buttonFire = document.getElementById('button_Fire')
-let buttonWater = document.getElementById('button_Water')
-let buttonSoil = document.getElementById('button_Soil')
-let buttonRestart = document.getElementById('button_Restart')
-
-//function selectDragonPet//
-
-let sectionDragon = document.getElementById('select_Dragon')
-/*let sectionAttack = document.getElementById('selct_Attack')*/ // has been eleminated this line of code becouse it was declared in other funtion (it was declared for second time it isn't necessary)
-let monkey = document.getElementById('dragon-Fire')
-let sharking = document.getElementById('dragon-Water')
-let changuita = document.getElementById('dragon-Soil')
-let spanDragonPlayer = document.getElementById('dragon_Player')
-
-//function enemyDragonPet//
-
-let spanDragonEnemy = document.getElementById('dragon_Enemy')
-
-//function battlesWild//
-
-let spanheartplayer = document.getElementById('heart-player')
-let spanheartenemy = document.getElementById('heart-enemy')
-
-//function createMessages//
-
-let sectionMessage = document.getElementById('resultado') //nuestras variables //
-let ataqueplayer = document.getElementById('ataque-player')
-let ataquenemy = document.getElementById('ataqu-enemy')
-
 /* variable global*/
+
 let attacksPlayer
 let attacksEnemy
 let heartplayer = 3;
 let heartenemy = 3;
 
 
-function startGame() {  //DOM//
+function startGame() {  /*DOM*/
 
-    // we have removed all variable (LET,Element) fron this funtion and then positioned all of them in the top (doing that we can test if our code is still working proporly)// 
-
+    let startover = document.getElementById('Restart')
     startover.style.display = 'none'
+
+    let sectionAttack = document.getElementById('selct_Attack')
     sectionAttack.style.display = 'none' /* desahabilitar selecion de ataques */
 
+    let buttonDragonPet = document.getElementById('button_selection')
     buttonDragonPet.addEventListener('click', selectDragonPet)
 
+    let buttonFire = document.getElementById('button_Fire')
     buttonFire.addEventListener('click', attackFire)
 
+    let buttonWater = document.getElementById('button_Water')
     buttonWater.addEventListener('click', attackWater)
 
+    let buttonSoil = document.getElementById('button_Soil')
     buttonSoil.addEventListener('click', attackSoil)
 
+    let buttonRestart = document.getElementById('button_Restart')
     buttonRestart.addEventListener('click', restartGame) /* reiniciar*/
 
 }
 
 function selectDragonPet() {
 
-
+    let sectionDragon = document.getElementById('select_Dragon')
     sectionDragon.style.display = 'none' /* desaparece la seleccion de dragons caundo se selecciona un dragon */
 
+    let sectionAttack = document.getElementById('selct_Attack')
     sectionAttack.style.display = 'flex' /* aparece nuevamente cuando seleciona un animal  */
 
-
+    let monkey = document.getElementById('dragon-Fire')
+    let sharking = document.getElementById('dragon-Water')
+    let changuita = document.getElementById('dragon-Soil')
+    let spanDragonPlayer = document.getElementById('dragon_Player')
 
     if (monkey.checked) {
         spanDragonPlayer.innerHTML = 'Chocomonkey'
@@ -87,7 +62,8 @@ function selectDragonPet() {
 
 function enemyDragonPet() {
 
-    let enemyAttack = random(1, 3) //in this case we not touch this line becouse is not pointed to an element HTML it also the line is not repeating, this let only is giving us the result.
+    let enemyAttack = random(1, 3)
+    let spanDragonEnemy = document.getElementById('dragon_Enemy')
 
     if (enemyAttack == 1) {
 
@@ -132,6 +108,8 @@ function attacksRandomEnemy() {
 
 function battlesWild() {
 
+    let spanheartplayer = document.getElementById('heart-player')
+    let spanheartenemy = document.getElementById('heart-enemy')
 
     // battles
     if (attacksEnemy == attacksPlayer) {
@@ -178,11 +156,13 @@ function viewheart() {
 
 function createMessages(resultados) {
 
+    //nuestras variables //
+    let sectionMessage = document.getElementById('resultado') //nuestras variables //
+    let ataqueplayer = document.getElementById('ataque-player')
+    let ataquenemy = document.getElementById('ataqu-enemy')
 
     // it is creating and adding the news paraghaph //
     /* let notificacion = document.createElement('p') se elimina ya que se declara el resultado de empate como un texto ya que nos interesa visualizar el texto en pantalla */
-
-    // these variable are specifically for a paraghaph//
     let newAttackplayer = document.createElement('p')
     let newAttackenemy = document.createElement('p')
 
