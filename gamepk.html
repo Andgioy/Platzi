@@ -19,23 +19,23 @@
 
         <div class="container_Dragon">
 
-            <label class="cards-box" for="ChocoMonky">
-                <p>ChocoMonky</p>
-                <img src="Fire.png" alt="">
-            </label>
             <input type="radio" name="pet" id="dragon-Fire" />
-
-            <label class="cards-box" for="Sharking">
-                <p>Sharking</p>
-                <img src="water.png" alt="">
+            <label class="cards-box" for="dragon-Fire">
+                <p>ChocoMonky</p>
+                <img src="Fire.png" alt="ChocoMonky">
             </label>
+
             <input type="radio" name="pet" id="dragon-Water" />
-
-            <label class="cards-box" for="Changuita">
-                <p>Changuita</p>
-                <img src="soil.png" alt="">
+            <label class="cards-box" for="dragon-Water">
+                <p>Sharking</p>
+                <img src="water.png" alt="Sharking">
             </label>
+
             <input type="radio" name="pet" id="dragon-Soil" />
+            <label class="cards-box" for="dragon-Soil">
+                <p>Changuita</p>
+                <img src="soil.png" alt="Changuita">
+            </label>
         </div>
         <button id="button_selection">Select Dragon</button>
 
@@ -49,7 +49,7 @@
 
         <h2 class="titlle_Cattack">Chosse Attack:</h2>
 
-        <div>
+        <div class="button-Button">
             <button id="button_Fire" class="button-powers">Fire 🔥</button>
             <button id="button_Water" class="button-powers">Water 💧</button>
             <button id="button_Soil" class="button-powers">Soil 🌱 </button>
@@ -65,18 +65,21 @@
                 </section>
             </section>
         </div>
-        <div class="resulT">
-        <div>
-            <p id="heart-player">3</p>
-            <p id="dragon_Player"> </p>
-            <div id="ataque-player"></div>
-        </div>
-        <div>
-            <p id="heart-enemy">3</p>
-            <p id="dragon_Enemy"> </p>
-            <div id="ataqu-enemy"></div>
 
-        </div>
+        <div class="resulT">
+
+            <div class="hearts-Lifes">
+                <p id="heart-player">3</p>
+                <p id="dragon_Player"></p>
+                <div id="ataque-player"></div>
+            </div>
+
+            <div class="hearts-Elife">
+                <p id="heart-enemy">3</p>
+                <p id="dragon_Enemy"></p>
+                <div id="ataqu-enemy"></div>
+
+            </div>
         </div>
     </section>
 
